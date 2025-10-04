@@ -684,8 +684,8 @@
       const startDate = new Date(localStorage.getItem("courseStartDate"));
       const currentDate = new Date();
       const diffInDays = Math.floor((currentDate - startDate) / (1000 * 60 * 60 * 24));
-      const weekUnlocked = Math.min(14, Math.ceil((diffInDays + 1) / 7));
-      const percentage = (weekUnlocked / 14) * 100;
+      const weekUnlocked = Math.min(2, Math.ceil((diffInDays + 1) / 7));
+      const percentage = (weekUnlocked / 2) * 100;
       document.getElementById("progressBarInner").style.width = `${percentage}%`;
     }
 
